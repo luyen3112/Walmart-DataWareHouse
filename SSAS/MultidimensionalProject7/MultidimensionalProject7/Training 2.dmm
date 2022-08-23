@@ -1,0 +1,197 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5d7e9eff-a108-4cb4-9a10-303afd580f1f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Training 2</ID>
+  <Name>Training 2</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Training</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="527b73f5-adf6-4aef-93af-efef98a6e0ca">
+    <DataSourceViewID>Des DB</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dff7292b-558c-4663-8b31-483a029cf187">
+      <ID>Dept</ID>
+      <Name>Dept</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c3d7fc08-c2e0-4ae0-889d-eaefc84e90c5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ad0ca00-0aa3-48af-a2cb-997f4964fd84">
+            <TableID>dbo_Training</TableID>
+            <ColumnID>Dept</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ae0d90c4-dde8-4c18-be43-180d17371281">
+      <ID>Size</ID>
+      <Name>Size</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3aedbe3-750e-47cb-8af8-a94ce331bd20">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04a2d73f-27ff-43cb-b872-344dd792a6b6">
+            <TableID>dbo_Training</TableID>
+            <ColumnID>Size</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="072f5494-753d-4430-a948-ce77e3a96747">
+      <ID>Store</ID>
+      <Name>Store</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e009e905-8224-4426-a0a6-a8ff4496c67a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2da45a2-da06-477c-8f80-cf8adcf06352">
+            <TableID>dbo_Training</TableID>
+            <ColumnID>Store</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="15915032-9495-4f34-be12-8b99b5be6b61">
+      <ID>Train ID</ID>
+      <Name>Train ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8d76967d-6830-42d4-808b-2a6c64e7eea7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="987c7043-c275-4e40-a5a2-59ed2905fa95">
+            <TableID>dbo_Training</TableID>
+            <ColumnID>Train_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="71955e73-2c99-4120-b1fb-aabe5de9475b">
+      <ID>Type</ID>
+      <Name>Type</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="958480f9-bbd6-4e22-ae67-0a0bceb3dac4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c08db12-c6a2-4b69-ad90-4c7103123ea8">
+            <TableID>dbo_Training</TableID>
+            <ColumnID>Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5fa67189-198f-4b44-8869-397614c90382">
+      <ID>Weekly Sales</ID>
+      <Name>Weekly Sales</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6db7d9c4-859c-49cb-84e2-dd76195c847e">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="062e2157-9fd0-4bd1-b462-8a1539211eda">
+            <TableID>dbo_Training</TableID>
+            <ColumnID>Weekly_Sales</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="4ddaecde-b303-4be8-b40e-4ba6cb74d9c0">
+      <ID>Training 2</ID>
+      <Name>Training 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="08e2483c-7d56-4af5-a60d-1c348cce55fb">
+          <ID>Dept</ID>
+          <Name>Dept</Name>
+          <SourceColumnID>Dept</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f56bcfb5-d156-4300-9bac-08b53764a1a6">
+          <ID>Size</ID>
+          <Name>Size</Name>
+          <SourceColumnID>Size</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="09d174ae-4bc3-4cb9-821b-d4788fd1c433">
+          <ID>Store</ID>
+          <Name>Store</Name>
+          <SourceColumnID>Store</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c563ff87-2a46-4081-b292-d6ba1dda7941">
+          <ID>Train ID</ID>
+          <Name>Train ID</Name>
+          <SourceColumnID>Train ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="ca55ba55-cb4b-4129-9fde-f06a3ba19885">
+          <ID>Type</ID>
+          <Name>Type</Name>
+          <SourceColumnID>Type</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d179e6f9-f9fd-4546-9e16-0a78f0d4d767">
+          <ID>Weekly Sales</ID>
+          <Name>Weekly Sales</Name>
+          <SourceColumnID>Weekly Sales</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
